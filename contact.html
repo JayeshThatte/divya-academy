@@ -32,9 +32,8 @@
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
   
-  <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+   <!--Favicon-->
+   <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 </head>
 
@@ -43,7 +42,7 @@
 
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Egen"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Egen" height="70rem" width="70rem">Divya Academy</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -51,7 +50,7 @@
 
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
@@ -60,25 +59,7 @@
         <li class="nav-item">
           <a class="nav-link" href="services.html">Services</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="team.html">Team</a>
-            <a class="dropdown-item" href="team-single.html">Team Details</a>
-            <a class="dropdown-item" href="career.html">Career</a>
-            <a class="dropdown-item" href="career-single.html">Career Details</a>
-            <a class="dropdown-item" href="blog-single.html">Blog Details</a>
-            <a class="dropdown-item" href="pricing.html">Pricing</a></a>
-            <a class="dropdown-item" href="faqs.html">FAQ's</a>
-          </div>
-        </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
@@ -98,8 +79,12 @@
 </section>
 <!-- /page-title -->
 
-<div class="map" id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758" data-marker="images/marker.png"></div>
-
+<div class="mapouter">
+  <div class="gmap_canvas"><iframe width="100%" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=divya academy kamothe&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="10" marginwidth="0"></iframe>
+    <style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style>
+   <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+  </div>
+</div>
 <!-- footer -->
 <footer class="bg-secondary position-relative">
   <img src="images/backgrounds/map.png" class="img-fluid overlay-image" alt="">
