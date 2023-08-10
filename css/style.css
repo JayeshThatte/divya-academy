@@ -180,7 +180,7 @@ h6, .h6 {
 
 body {
   background-color: #fff;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 ::-moz-selection {
