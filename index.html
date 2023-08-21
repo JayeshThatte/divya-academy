@@ -38,7 +38,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-SLCEPTC5J4');
+gtag('config', 'G-SLCEPTC5J4');
 </script>
 <body style="width: 100%;">
   
@@ -207,7 +207,68 @@
   </div>
 </div>
 
-
+<div class="modal fade" id="individualattention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="align-items: center;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Subject Coverage</h5>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead style="text-align:center;">
+            <tr style="text-align:center;">
+              <th scope="col">CBSE<br>8<sup>th</sup> to 10<sup>th</sup></th>
+              <th scope="col">State Board<br>8<sup>th</sup> to 10<sup>th</sup></th>
+              <th scope="col">Science</th>
+              <th scope="col">Commerce</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Maths</td>
+              <td>Maths</td>
+              <td>Physics</td>
+              <td>BK</td>
+            </tr>
+            <tr>
+              <td scope="row">Science</td>
+              <td>Science</td>
+              <td>Chemistry</td>
+              <td>Economics</td>
+            </tr>
+            <tr>
+              <td scope="row">English</td>
+              <td>English</td>
+              <td>Maths</td>
+              <td>OC</td>
+            </tr>
+            <tr>
+              <td scope="row">SST</td>
+              <td>SST</td>
+              <td>Biology</td>
+              <td>SP/Maths</td>
+            </tr>
+            <tr>
+              <td scope="row">Marathi</td>
+              <td>Marathi</td>
+              <td>English</td>
+              <td>English</td>
+            </tr>
+            <tr>
+              <td scope="row">Hindi</td>
+              <td>Hindi</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="modal fade" id="homework" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -256,6 +317,70 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="qualityassurance" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="align-items: center;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Subject Coverage</h5>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead style="text-align:center;">
+            <tr style="text-align:center;">
+              <th scope="col">CBSE<br>8<sup>th</sup> to 10<sup>th</sup></th>
+              <th scope="col">State Board<br>8<sup>th</sup> to 10<sup>th</sup></th>
+              <th scope="col">Science</th>
+              <th scope="col">Commerce</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Maths</td>
+              <td>Maths</td>
+              <td>Physics</td>
+              <td>BK</td>
+            </tr>
+            <tr>
+              <td scope="row">Science</td>
+              <td>Science</td>
+              <td>Chemistry</td>
+              <td>Economics</td>
+            </tr>
+            <tr>
+              <td scope="row">English</td>
+              <td>English</td>
+              <td>Maths</td>
+              <td>OC</td>
+            </tr>
+            <tr>
+              <td scope="row">SST</td>
+              <td>SST</td>
+              <td>Biology</td>
+              <td>SP/Maths</td>
+            </tr>
+            <tr>
+              <td scope="row">Marathi</td>
+              <td>Marathi</td>
+              <td>English</td>
+              <td>English</td>
+            </tr>
+            <tr>
+              <td scope="row">Hindi</td>
+              <td>Hindi</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--Model end-->
 
 <!-- feature -->
@@ -272,18 +397,18 @@
           </div>
           <div class="col-lg-7 offset-lg-1">
             <div class="row">
-              <div class="col-12">
+              <div class="col-lg-12">
                 <h2 class="text-white">What We Give</h2>
                 <div class="section-border ml-0"></div>
               </div>
-              <div class="col-md-6 mb-4" data-toggle="modal" data-target="#subjectmodel" style="cursor: pointer">
+              <div class="col-md-6 mb-4">
                 <div class="media">
                   <i class="icon text-gradient-primary ti-vector mr-3"></i>
                   <div class="media-body">
                     <h4 class="text-white">Subject Coverage</h4>
                     <p class="text-light">We cover subjects from various academic disciplines, including mathematics, science,
                        language arts, social studies, and more.</p>
-                        <button type="button" class="btn">Know More</button>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#subjectmodel" style="cursor: pointer">Know More</button>
                   </div>
                 </div>
               </div>
@@ -293,21 +418,21 @@
                   <div class="media-body">
                     <h4 class="text-white">Individualized Attention</h4>
                     <p class="text-light">We provide the personalized attention that students receive. Which help them to </p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#individualattention" style="cursor: pointer">Know More</button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 mb-4" data-toggle="modal" data-target="#homework" style="cursor: pointer">
+              <div class="col-md-6 mb-4">
                 <div class="media">
                   <i class="icon text-gradient-primary ti-headphone-alt mr-3"></i>
                   <div class="media-body">
                     <h4 class="text-white">Homework Help and Exam Preparation</h4>
                     <p class="text-light">Assist students with homework assignments, test preparation, and clarifying concepts 
                       that may be challenging in a regular classroom setting.</p>
-                      <button type="button" class="btn">Know More</button>
+                     <button type="button" class="btn" data-toggle="modal" data-target="#homework" style="cursor: pointer">Know More</button>
                     </div>
                   </div>
                 </div>
-              </div>
               <div class="col-md-6 mb-4">
                 <div class="media">
                   <i class="icon text-gradient-primary ti-ruler-pencil mr-3"></i>
@@ -315,6 +440,8 @@
                     <h4 class="text-white">Quality Assurance</h4>
                     <p class="text-light">When evaluating a tutoring service, ensure to investigate tutors' qualifications and
                        experience. Opt for services offering skilled and seasoned educators.</p>
+                       <button type="button" class="btn" data-toggle="modal" data-target="#qualityassurance" style="cursor: pointer">Know More</button>
+
                   </div>
                 </div>
               </div>
