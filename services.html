@@ -30,6 +30,8 @@
   <!-- social icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 
 
 </head>
@@ -171,7 +173,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content" style="align-items: center;">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Subject Coverage</h5>
+        <h4 class="modal-title" id="exampleModalLongTitle">Subject Coverage</h4>
       </div>
       <div class="modal-body">
         <table class="table">
@@ -231,12 +233,35 @@
 </div>
 
 
+<div class="modal fade" id="attention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="align-items: center;">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLongTitle">Individualized Attention</h4>
+      </div>
+      <div class="modal-body">
+        <h5><span class="material-symbols-outlined">radio_button_checked</span>Customized Learning:</h5>
+        <p>Divya's class provides personalized teaching, adapting to each student's learning style and speed for more 
+          effective understanding.</p>
+        <h5><span class="material-symbols-outlined">radio_button_checked</span>Targeted Support:</h5>
+        <p>Individual attention helps address students' weak points promptly, ensuring they receive focused help where needed.</p>
+        <h5><span class="material-symbols-outlined">radio_button_checked</span>Confidence Boost:</h5>
+        <p>Tailored explanations and assistance enhance students' self-assurance, creating a positive atmosphere for 
+          active learning and progress.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="modal fade" id="homework" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content" style="align-items: center;">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Homework & Test Series</h5>
+        <h4 class="modal-title" id="exampleModalLongTitle">Homework & Test Series</h4>
       </div>
       <div class="modal-body">
         <table class="table">
@@ -279,6 +304,31 @@
     </div>
   </div>
 </div>
+
+
+<div class="modal fade" id="assurance" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="align-items: center;">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLongTitle">Quality Assurance</h4>
+      </div>
+      <div class="modal-body">
+        <h5><span class="material-symbols-outlined">radio_button_checked</span>High Standard Instruction:</h5>
+        <p>DDivya's tuition class is committed to delivering top-notch education, maintaining a high standard of
+           teaching methods and materials.</p>
+        <h5><span class="material-symbols-outlined">radio_button_checked</span>Consistent Evaluation:</h5>
+        <p>Quality assurance involves regular assessments to ensure students' understanding and progress,
+           enabling timely adjustments to teaching strategies.</p>
+        <h5><span class="material-symbols-outlined">radio_button_checked</span>Effective Learning Outcomes: </h5>
+        <p>With a focus on quality, students receive accurate information and guidance, leading to better comprehension,
+           retention, and overall academic performance..</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!--Model end-->
 
 <!-- feature -->
@@ -299,14 +349,15 @@
                 <h2 class="text-white">What We Give</h2>
                 <div class="section-border ml-0"></div>
               </div>
-              <div class="col-md-6 mb-4" data-toggle="modal" data-target="#subjectmodel" style="cursor: pointer">
+              <div class="col-md-6 mb-4">
                 <div class="media">
                   <i class="icon text-gradient-primary ti-vector mr-3"></i>
                   <div class="media-body">
                     <h4 class="text-white">Subject Coverage</h4>
                     <p class="text-light">We cover subjects from various academic disciplines, including mathematics, science,
                        language arts, social studies, and more.</p>
-                       <button type="button" class="btn">Know More</button>
+                       <button type="button" class="btn" data-toggle="modal" data-target="#subjectmodel" style="cursor: pointer">
+                        Know More</button>
                   </div>
                 </div>
               </div>
@@ -316,17 +367,20 @@
                   <div class="media-body">
                     <h4 class="text-white">Individualized Attention</h4>
                     <p class="text-light">We provide the personalized attention that students receive. Which help them to </p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#attention" style="cursor: pointer">
+                      Know More</button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 mb-4" data-toggle="modal" data-target="#homework" style="cursor: pointer">
+              <div class="col-md-6 mb-4">
                 <div class="media">
                   <i class="icon text-gradient-primary ti-headphone-alt mr-3"></i>
                   <div class="media-body">
                     <h4 class="text-white">Homework Help and Exam Preparation</h4>
                     <p class="text-light">Assist students with homework assignments, test preparation, and clarifying concepts 
                       that may be challenging in a regular classroom setting.</p>
-                      <button type="button" class="btn">Know More</button>
+                      <button type="button" class="btn" data-toggle="modal" data-target="#homework" style="cursor: pointer">
+                        Know More</button>
                   </div>
                 </div>
               </div>
@@ -337,6 +391,8 @@
                     <h4 class="text-white">Quality Assurance</h4>
                     <p class="text-light">When evaluating a tutoring service, ensure to investigate tutors' qualifications and
                        experience. Opt for services offering skilled and seasoned educators.</p>
+                       <button type="button" class="btn" data-toggle="modal" data-target="#assurance" style="cursor: pointer">
+                        Know More</button>
                   </div>
                 </div>
               </div>
